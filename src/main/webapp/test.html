@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <title>图形</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="lib/raphael.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="component/angular.tabs.js"></script>
+    <script src="lib/raphael.extends.js"></script>
+    <script src="util/utils.js"></script>
+    <style>
+        .main-content {
+            position: relative;
+            top: 20px;
+        }
+    </style>
+</head>
+<body ng-app="main">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">ETDP</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./getting-started.html">Get started</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container main-content">
+        <tabs>
+            <pane title="服务注册" id="tab-0"></panel>
+                <div id="gant"></div>
+            <pane title="在线分析" id="tab-1"></panel>
+            <pane title="调度实例" id="tab-2"></panel>
+        </tabs>
+    </div>
+    <script src="gant.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
